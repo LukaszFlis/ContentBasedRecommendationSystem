@@ -18,7 +18,6 @@ public class Main {
 
         //wartośc podobieństwa wybranego dokumentu do znormalizowanego wektora zapytania
         double sim = similarity(A, ZN);
-        System.out.println();
         System.out.println("Podobieństwo wybranego dokumentu do zapytania 'Z' równa się: " + sim);
     }
 
@@ -104,11 +103,10 @@ public class Main {
 
                 sim = productOfVectors / qLength;
             }
-
-
         } catch (InputMismatchException ex) {
             ex.printStackTrace();
         }
+        System.out.println();
         return sim;
     }
 }
